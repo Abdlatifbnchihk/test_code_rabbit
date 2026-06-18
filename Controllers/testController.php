@@ -13,7 +13,7 @@ class TestController extends Controller
         }
     }
 
-    function test2(){
+    function test2(Request $request){
         Application::create($request->all());
     }
 }
