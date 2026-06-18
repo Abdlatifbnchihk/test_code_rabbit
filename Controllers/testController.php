@@ -11,6 +11,14 @@ class TestController extends Controller
         if ($user = null) {
             return false;
         }
+
+
+        $user = Auth::user();
+        $count = 10;
+
+        return view('dashboard');
+
+        
     }
 
     function test2(Request $request){
